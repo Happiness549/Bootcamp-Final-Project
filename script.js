@@ -21,6 +21,8 @@ if (emailValue === "") {
 
 if (!emailPattern.test(emailValue)) {
     errorMessage.textContent = "Enter a valid email address";
+    errorMessage.classList.add("error-message");
+    emailInput.classList.add("input-error");
     return;
 }
 
@@ -33,11 +35,16 @@ console.log("Exactly");
 });
 
 dismissBtn.addEventListener("click", function () {
-errorMessage.textContent = "";
+ successCard.style.display = "none";
+ formContainer.style.display = "block";
 
-successCard.style.display = "none";
-formContainer.style.display = "block";
-form.reset();
+ 
+
+
+ form.reset();
+ errorMessage.textContent = "";
+ emailInput.classList.remove("input-error");
+ errorMessage.classList.remove("error-message");
 
 
 });
