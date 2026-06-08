@@ -13,9 +13,13 @@ event.preventDefault();
 
 const emailValue = emailInput.value.trim();
 errorMessage.textContent = "";
+emailInput.classList.remove("input-error");
+errorMessage.classList.remove("error-message");
 
 if (emailValue === "") {
     errorMessage.textContent = "Valid email required";
+    errorMessage.classList.add("error-message");
+    emailInput.classList.add("input-error");
     return;
 }
 
@@ -28,8 +32,7 @@ if (!emailPattern.test(emailValue)) {
 
 formContainer.style.display = "none";
 successCard.style.display = "block";
-console.log("successCard element:", successCard);
-console.log("Exactly");
+
 
 
 });
