@@ -19,6 +19,17 @@ body {
     font-weight: 700;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -33,10 +44,13 @@ p{
   padding: 25px;
   border-radius: 30px;
 }
-.features{
-    list-style: none;
 
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+    
 
 input, button {
   display: block;
@@ -48,7 +62,7 @@ input{
     border-radius: 7px;
 }
 
-button{
+#subscribe-button{
     background-color: hsl(235, 18%, 26%);
     color: white;
     height: 40px;
@@ -56,4 +70,29 @@ button{
     cursor: pointer;
 
 }
+.success-card {
+    display: none; 
+    position: fixed; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: hsl(0, 0%, 100%); 
+    color:hsl(235, 18%, 26%) ; 
+    padding: 40px; 
+    width: 400px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+    text-align: center;
+    text-align: left;
+  
+}
+  
 
+#dismissBtn{
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
