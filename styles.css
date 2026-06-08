@@ -96,3 +96,12 @@ input{
     cursor: pointer;
 
 }
+
+.error-message {
+  color: hsl(4, 100%, 67%);
+}
+
+.email-input {
+  border: 2px solid hsl(4, 100%, 67%);
+  background-color: rgba(255, 0, 0, 0.05);
+}
