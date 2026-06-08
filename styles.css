@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: hsl(234, 29%, 20%);
+}
+
 @font-face {
     font-family: "Roboto";
     src: url("./fonts/Roboto-Regular.ttf");
@@ -13,3 +22,38 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+p{
+    font-weight: 16px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 25px;
+  border-radius: 30px;
+}
+.features{
+    list-style: none;
+
+}
+
+input, button {
+  display: block;
+  margin-bottom: 15px;
+}
+input{
+    height: 30px;
+    width: 45%;
+    border-radius: 7px;
+}
+
+button{
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
