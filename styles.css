@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   display: flex;
   justify-content: center;
@@ -22,11 +25,19 @@ body {
 .container {
   display: flex;
   flex-direction: column-reverse;
+  width: 100%;
+  max-width: 375;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 30px;
 }
 
 @media (min-width: 1440px) {
   .container {
     flex-direction: row;
+    max-width: 900px;
+    padding: 40px;
+
   }
 }
 
@@ -62,7 +73,7 @@ input, button {
 }
 input{
     height: 30px;
-    width: 75%;
+    width: 100%;
     border-radius: 7px;   
 }
 
@@ -85,7 +96,8 @@ input{
     background: hsl(0, 0%, 100%); 
     color:hsl(235, 18%, 26%) ; 
     padding: 40px; 
-    width: 300px; 
+    width: 90%; 
+    max-width: 375px;
     border-radius: 15px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
     text-align: center;
