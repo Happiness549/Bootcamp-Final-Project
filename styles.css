@@ -28,8 +28,9 @@ body {
   width: 100%;
   max-width: 375px;
   gap: 20px;
-  padding: 25px;
-  border-radius: 30px;
+  padding: 0px;
+  border-radius: 0;
+  gap:0
 }
 
 @media (min-width: 1440px) {
