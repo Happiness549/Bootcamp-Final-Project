@@ -46,6 +46,7 @@ body {
 }
 li{
     font-size: 16px;
+    line-height: 30px;
 }
 p{
   font-size: 16px;
@@ -59,6 +60,9 @@ p{
   background-color: hsl(0, 0%, 100%);
   padding: 40pxpx;
   border-radius: 30px;
+}
+.content{
+  margin-top: 10px;
 }
 
 .features {
@@ -95,6 +99,22 @@ input, #subscribe-button{
   background-color: hsl(4, 100%, 67%);
 }
 
+@media (max-width: 375px) {
+  .success-card {
+    position: static;
+    transform: none;
+    border-radius: 0;
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #dismissBtn {
+    margin-top: auto;
+    width: 100%;
+  }
+}
+
 .success-card {
     display: none; 
     position: fixed; 
@@ -110,6 +130,7 @@ input, #subscribe-button{
     text-align: left;
   
 }
+
 #dismissBtn:hover{
   background-color: hsl(4, 100%, 67%);
 
