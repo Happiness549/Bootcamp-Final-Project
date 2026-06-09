@@ -38,6 +38,7 @@ li{
 }
 p{
   font-size: 16px;
+
 }
 
 .container {
@@ -61,16 +62,19 @@ input, button {
 }
 input{
     height: 30px;
-    width: 45%;
-    border-radius: 7px;
+    width: 75%;
+    border-radius: 7px;   
 }
 
 #subscribe-button{
+  
     background-color: hsl(235, 18%, 26%);
     color: white;
+    width: 340px;
     height: 40px;
     border-radius: 7px;
     cursor: pointer;
+    
 
 }
 .success-card {
