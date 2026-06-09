@@ -27,10 +27,9 @@ body {
   flex-direction: column-reverse;
   width: 100%;
   max-width: 375px;
-  gap: 20px;
   padding: 0px;
   border-radius: 0;
-  gap:0
+  gap:20px;
 }
 
 @media (min-width: 1440px) {
