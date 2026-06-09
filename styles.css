@@ -33,8 +33,11 @@ body {
 body {
     font-family: "Roboto", sans-serif;
 }
+li{
+    font-size: 16px;
+}
 p{
-    font-weight: 16px;
+  font-size: 16px;
 }
 
 .container {
