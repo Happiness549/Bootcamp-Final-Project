@@ -85,7 +85,7 @@ input{
     background: hsl(0, 0%, 100%); 
     color:hsl(235, 18%, 26%) ; 
     padding: 40px; 
-    width: 400px; 
+    width: 300px; 
     border-radius: 15px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
     text-align: center;
