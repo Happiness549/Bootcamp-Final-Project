@@ -146,6 +146,9 @@ input,
     width: 100%;
     display: block;
   }
+  .dissmis-button{
+    margin-top: auto;
+  }
 
   .success-card {
     position: static;
@@ -156,6 +159,7 @@ input,
     border-radius: 0;
     box-shadow: none;
     padding: 30px;
+    
   }
 }
 
