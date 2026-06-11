@@ -146,20 +146,22 @@ input,
     width: 100%;
     display: block;
   }
-  #dismissBtn{
-    margin-top: auto;
-  }
+  
 
   .success-card {
-    position: static;
-    transform: none;
-    width: 100%;
-    max-width: 100%;
+    position: relative;
     min-height: 100vh;
+    padding: 30px;
     border-radius: 0;
     box-shadow: none;
-    padding: 30px;
+    width: 100%;
+  }
 
+  #dismissBtn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
   }
 }
 
